@@ -165,4 +165,20 @@ nav a {
     color: whitesmoke;
     text-decoration: none;
     transition: 0.5s;
+    white-space: nowrap;
+}
+
+nav a::after {
+    position: absolute;
+    content: '';
+    top: 4rem;
+    right: 0;
+    background-color: white;
+    width: 0%;
+    height: 2px;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
 }
