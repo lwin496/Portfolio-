@@ -73,7 +73,7 @@ body {
 .headbox hr {
 
     margin-top: 20px;
-    width: 50%;
+    width: 1000px;
     background-color: whitesmoke;
     height: 10px;
     animation-name: hr;
@@ -95,7 +95,7 @@ body {
 .midbox {
     width: 100vw;
     margin-left: -50vw;
-    height: 900px;
+    height: 600px;
     left: 50%;
     background-color: whitesmoke;
     position: relative;
@@ -181,4 +181,91 @@ nav a::after {
 
 nav a:hover::after {
     width: 100%;
+}
+
+@media (max-width: 800px) {
+
+    .headbox hr {
+        width: 300px;
+    }
+
+    .headbox img {
+        width: 60vw;
+        aspect-ratio: 1/1;
+    }
+
+    .midbox {
+        height: 500px;
+
+
+    }
+
+    .split-content {
+        column-count: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .split-content img {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60vw;
+        aspect-ratio: 1/1;
+
+    }
+
+    .headbox nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+}
+
+@media (max-width: 1000px) {
+    .split-content {
+        column-count: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .split-content img {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60vw;
+        aspect-ratio: 1/1;
+    }
+
+    .headbox {
+        height: 1000px;
+    }
+
+    .headbox ul {
+        display: flex;
+        flex-direction: row;
+        right: none;
+        margin: none;
+        font-size: 1rem;
+
+
+    }
+
+    .headbox nav {
+        left: 0;
+        position: relative;
+        margin: auto;
+
+
+    }
+
+    center {
+        margin: 0;
+        padding: 0;
+    }
+
 }
