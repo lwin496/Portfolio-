@@ -7,12 +7,21 @@
     font-size: 20px;
     color: whitesmoke;
 }
-
 body{ 
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='775' height='93' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='2.4' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
 }
 
+
+.header {
+    color: whitesmoke;
+    height: 100px;
+    margin-left: 10%;
+    margin-bottom: 2px;
+}
+.header h1 { 
+    font-size: 50px;
+}
 
 .headbox {
     top: 0;
@@ -33,7 +42,6 @@ body{
 .headbox h1 {
     margin-top: 30px;
     font-size: 100px;
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: whitesmoke;
     margin-bottom: 0;
@@ -46,11 +54,11 @@ body{
 
 @keyframes name {
     0% {
-        left: -10000px
+        right: -10000px;
     }
 
     100% {
-        left: 0;
+        right: 0;
     }
 }
 
@@ -128,48 +136,62 @@ nav a:hover::after {
     width: 100%;
 }
 
-.mainContent { 
-    margin-top: 2% ;
-    margin-right: 15%;
-    margin-left: 10% ;
 
-}
 
-.mainContent img {
-    width: 500px;
-    height: 550px;
+.contactContainerBox{
+    margin-left: 10%;
     float: left;
-    shape-image-threshold: 0.9;
-    shape-outside: polygon(81% 99%, 83% 91%, 82% 80%, 99% 76%, 100% 60%, 83% 42%, 64% 33%, 66% 25%, 67% 14%, 62% 7%, 52% 5%, 43% 5%, 34% 14%, 30% 22%, 31% 28%, 33% 34%, 18% 38%, 9% 45%, 0% 60%, 1% 99%);
+    width: 75%;
+    height: 60%;    
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 25px;
+    position: absolute;
+}
+.contactContainerBox p {
+    color: black;
+    font-size: 30px
+}
+
+fieldset { 
+    border: none;
+}
+
+.contactContainerBox { 
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    padding: 20px;
+
 
 }
 
-.mainContent p {        
-    font-size: 29px;
-    margin: 10px;
-    margin-left: 10px;
+.contactContainerBox label { 
+    color: black;
 }
 
-.footer { 
-    column-count: 3;
+.contactContainerBox input { 
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+    background-color: whitesmoke;
+    outline: none;
+}
+
+textarea { 
+    background-color: whitesmoke;
+    color: black;
+}
+
+.areaTwo { 
+    text-align: center;
+}
+
+.areaOne { 
+    margin: auto;
+    text-align: center;
+
 }
 
 
-@media (max-width: 950px) {
-    .mainContent > p { 
-        float: none;
-        display: block;
-    }
-}
-@media (min-width: 2000px) {
-    .mainContent > p { 
-        font-size: 50px;
-    }
-    li {
-        margin-right: 30%;
-        font-size: 60px;
-    }
-    nav:a {
-         margin-top:10px
-    }
-}
+
+
