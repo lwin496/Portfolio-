@@ -192,6 +192,10 @@ textarea {
 
 }
 
+
+
+
+/* Mobile Scale code  */
 @media (max-width: 400px ) {
 
     .contactContainerBox { 
@@ -207,6 +211,9 @@ textarea {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
+    }
+    nav a { 
+        font-size: 20px;
     }
     .header h1 { 
         font-size: 50px;
