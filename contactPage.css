@@ -192,6 +192,25 @@ textarea {
 
 }
 
+@media (max-width: 400px ) {
 
+    .contactContainerBox { 
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 50%;
+        height: 100%;
+    }
+    nav ul {
+        position: absolute;
+        left: -70vw;
+        justify-content: center; 
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .header h1 { 
+        font-size: 50px;
+    }
+}
 
 
