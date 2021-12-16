@@ -89,10 +89,14 @@ nav a:hover::after {
 
 @keyframes name {
     0% {
-        left: -10000px
+        right: -10000px;
     }
 
     100% {
-        left: 0;
+        right: 0;
     }
 }
+
+
+
+

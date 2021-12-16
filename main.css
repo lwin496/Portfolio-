@@ -8,6 +8,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .headbox {
@@ -202,7 +203,6 @@ nav a:hover::after {
 
 @media (max-width: 800px) {
 
-    
     .headbox hr {
         width: 80%;
     }
@@ -212,7 +212,7 @@ nav a:hover::after {
     .headbox {
         height: 1000px;
         margin-top: -50px;
-        margin-right: -10px;
+        margin-right:0;
     }
 
     .headbox img {
@@ -223,12 +223,13 @@ nav a:hover::after {
     .image img {
         margin-top: 10%; 
         width: 100vw;
-        height: 50vh;
+        height: 60vh;
         padding: 0;
         margin: 0;
     }
     .image { 
         padding: 0;
+        margin-right:0;
 
     }
     
@@ -250,7 +251,7 @@ nav a:hover::after {
     
     }
     .midbox {
-        height: 1500px;
+        height: 1000px;
         display: flex;
         flex-wrap:wrap;    
     }
@@ -258,7 +259,11 @@ nav a:hover::after {
         font-size: 12px  ;
     }
     .text { 
-        width: 100vw;
+        margin-top: 200px;
+        width: 99vw
+    }
+    .text p {
+        font-size: 50px;
     }
 
 }

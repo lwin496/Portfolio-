@@ -203,20 +203,41 @@ textarea {
         flex-wrap: wrap;
         margin-top: 50%;
         height: 100%;
+        width: 100vw;
     }
     nav ul {
-        position: absolute;
+        position: relative;
         left: -70vw;
         justify-content: center; 
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
+
+    }
+
+    .headbox nav {
+        left: 0;
+        position: relative;
+        margin: auto;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0%;
     }
     nav a { 
         font-size: 20px;
     }
     .header h1 { 
         font-size: 50px;
+        margin: 0;
+    }
+
+    .contactContainerBox { 
+        margin: 0;
+        padding: 0;
+        
     }
 }
 
